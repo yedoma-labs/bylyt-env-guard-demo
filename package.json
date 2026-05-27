@@ -1,0 +1,21 @@
+{
+	"name": "@yedoma-labs/bylyt-env-guard-demo",
+	"version": "0.1.0",
+	"description": "Demo application showcasing @yedoma-labs/bylyt-env-guard",
+	"type": "module",
+	"scripts": {
+		"dev": "bun run --watch src/index.ts",
+		"start": "bun run src/index.ts",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check src",
+		"lint:fix": "biome check --write src"
+	},
+	"dependencies": {
+		"@yedoma-labs/bylyt-env-guard": "0.1.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/bun": "latest",
+		"typescript": "5.8.3"
+	}
+}
