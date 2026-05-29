@@ -11,7 +11,7 @@
 		"lint:fix": "biome check --write src"
 	},
 	"dependencies": {
-		"@yedoma-labs/bylyt-env-guard": "0.3.4"
+		"@yedoma-labs/bylyt-env-guard": "0.3.5"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
