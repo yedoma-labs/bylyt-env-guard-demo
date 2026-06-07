@@ -1,5 +1,10 @@
 # bylyt-env-guard Demo
 
+<picture>
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/yedoma-labs/assets/main/resized/banner-resized-mobile.png">
+  <img src="https://raw.githubusercontent.com/yedoma-labs/assets/main/resized/banner-resized.png" alt="Project Header">
+</picture>
+
 A demo Bun HTTP API showcasing [`@yedoma-labs/bylyt-env-guard`](https://github.com/yedoma-labs/bylyt-env-guard) — a type-safe, schema-based environment variable validation library.
 
 ## What This Demo Shows
