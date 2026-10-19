@@ -5,7 +5,7 @@
   <img src="https://raw.githubusercontent.com/yedoma-labs/assets/main/resized/banner-resized.png" alt="Project Header">
 </picture>
 
-A demo Bun HTTP API showcasing [`@yedoma-labs/bylyt-env-guard`](https://github.com/yedoma-labs/bylyt-env-guard) — a type-safe, schema-based environment variable validation library.
+A demo Node HTTP API showcasing [`@yedoma-labs/bylyt-env-guard`](https://github.com/yedoma-labs/bylyt-env-guard) — a type-safe, schema-based environment variable validation library.
 
 ## What This Demo Shows
 
@@ -32,13 +32,13 @@ cp .env.example .env
 # API_KEY=your-actual-secret-key
 
 # Install dependencies
-bun install
+pnpm install
 
 # Run in development mode (with hot reload)
-bun dev
+pnpm dev
 
 # Or run in production mode
-bun start
+pnpm start
 ```
 
 ## Available Endpoints
@@ -143,17 +143,17 @@ See `.env.example` for all available configuration options:
 
 ```bash
 # Type check
-bun run typecheck
+pnpm run typecheck
 
 # Lint
-bun run lint
+pnpm run lint
 
 # Format and fix issues
-bun run lint:fix
+pnpm run lint:fix
 ```
 
 ## Learn More
 
 - [@yedoma-labs/bylyt-env-guard](https://github.com/yedoma-labs/bylyt-env-guard) - Main library
-- [Bun](https://bun.sh) - Fast JavaScript runtime
+- [tsx](https://tsx.is) - TypeScript runner
 - [Biome](https://biomejs.dev) - Fast linter and formatter
