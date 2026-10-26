@@ -54,10 +54,10 @@ curl http://localhost:3000/health
 **Response:**
 ```json
 {
-  "status": "ok",
-  "uptime": 42,
-  "environment": "development",
-  "version": "0.1.0"
+	"status": "ok",
+	"uptime": 42,
+	"environment": "development",
+	"version": "0.1.0"
 }
 ```
 
@@ -72,13 +72,13 @@ curl http://localhost:3000/info
 **Response:**
 ```json
 {
-  "name": "bylyt-env-guard-demo",
-  "version": "0.1.0",
-  "environment": "development",
-  "log_level": "info",
-  "enable_docs": true,
-  "allowed_origins": ["http://localhost:3000"],
-  "max_request_size_kb": 1024
+	"name": "bylyt-env-guard-demo",
+	"version": "0.1.0",
+	"environment": "development",
+	"log_level": "info",
+	"enable_docs": true,
+	"allowed_origins": ["http://localhost:3000"],
+	"max_request_size_kb": 1024
 }
 ```
 
@@ -126,18 +126,18 @@ console.log(config.API_KEY); // Shows the actual value in your code
 
 See `.env.example` for all available configuration options:
 
-| Variable | Type | Required | Default | Description |
-|----------|------|----------|---------|-------------|
-| `PORT` | port | No | `3000` | Server port |
-| `HOST` | string | No | `localhost` | Server hostname |
-| `NODE_ENV` | enum | No | `development` | Environment (development/production/test) |
-| `APP_NAME` | string | No | `bylyt-env-guard-demo` | Application name |
-| `APP_VERSION` | string | No | `0.1.0` | Application version |
-| `API_KEY` | string | **Yes** | - | API key (sensitive) |
-| `LOG_LEVEL` | enum | No | `info` | Log level (debug/info/warn/error) |
-| `ALLOWED_ORIGINS` | array | No | `["http://localhost:3000"]` | CORS allowed origins (comma-separated) |
-| `MAX_REQUEST_SIZE_KB` | number | No | `1024` | Max request size in KB |
-| `ENABLE_DOCS` | boolean | No | `true` | Enable API documentation |
+| Variable              | Type    | Required | Default                     | Description                               |
+| --------------------- | ------- | -------- | --------------------------- | ----------------------------------------- |
+| `PORT`                | port    | No       | `3000`                      | Server port                               |
+| `HOST`                | string  | No       | `localhost`                 | Server hostname                           |
+| `NODE_ENV`            | enum    | No       | `development`               | Environment (development/production/test) |
+| `APP_NAME`            | string  | No       | `bylyt-env-guard-demo`      | Application name                          |
+| `APP_VERSION`         | string  | No       | `0.1.0`                     | Application version                       |
+| `API_KEY`             | string  | **Yes**  | -                           | API key (sensitive)                       |
+| `LOG_LEVEL`           | enum    | No       | `info`                      | Log level (debug/info/warn/error)         |
+| `ALLOWED_ORIGINS`     | array   | No       | `["http://localhost:3000"]` | CORS allowed origins (comma-separated)    |
+| `MAX_REQUEST_SIZE_KB` | number  | No       | `1024`                      | Max request size in KB                    |
+| `ENABLE_DOCS`         | boolean | No       | `true`                      | Enable API documentation                  |
 
 ## Development
 
