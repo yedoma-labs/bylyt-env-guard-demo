@@ -90,7 +90,8 @@ Without `API_KEY` in your `.env`:
 
 ```
 ❌ Environment validation failed:
-  - API_KEY: Required field is missing
+
+  • API_KEY: is required but missing
 ```
 
 The application **fails immediately at startup** before any request is processed.
@@ -101,8 +102,11 @@ With `PORT=abc` in your `.env`:
 
 ```
 ❌ Environment validation failed:
-  - PORT: Expected a valid port number (1-65535), got: abc
+
+  • PORT: Cannot coerce "abc" to port (integer) (got: abc)
 ```
+
+With `PORT=99999` the message is `PORT: must be at most 65535 (got: 99999)`.
 
 ### Invalid Enum Value
 
@@ -110,8 +114,11 @@ With `NODE_ENV=staging` in your `.env`:
 
 ```
 ❌ Environment validation failed:
-  - NODE_ENV: Must be one of: development, production, test
+
+  • NODE_ENV: must be one of: development, production, test (got: staging)
 ```
+
+After the message, Node prints the stack trace of the uncaught `EnvValidationError` and exits with a non-zero code.
 
 ### Sensitive Values Are Masked
 
